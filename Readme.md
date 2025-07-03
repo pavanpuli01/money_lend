@@ -6,7 +6,7 @@ A simple PHP + MySQL web application to manage personal loans, logins, and user 
 ✅ 1. Clone or Download Project  
    └── Place it in your web server directory (e.g., `htdocs` for XAMPP)
 bash
-git clone https://github.com/yourusername/money_lend.git
+git clone https://github.com/pavanpuli01/money_lend.git
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ✅ 2. Run Setup
 Open your browser and go to:
@@ -26,10 +26,7 @@ http://localhost/money_lend/1index.html
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ✅ 5. First Use
 🔹 Click **"Create"** to register  
-🔹 Or login with:
 
-Email: admin@example.com
-Password: admin123
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ## ⚙️ System Requirements
 | Requirement | Version            |
@@ -43,18 +40,5 @@ Password: admin123
 ❓ MySQL not running? → Start via XAMPP Control Panel  
 ❓ Upload issues?     → Ensure `/uploads/` folder exists and is writable  
 ❓ Errors?            → Check `error_log` or browser console
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-## 📁 Project Structure
-money_lend/
-├── 1index.html          # Login page
-├── 2login.php           # Login logic
-├── 3register.html       # Registration form
-├── 4register.php        # Handles registration & uploads
-├── dashboard.php        # User dashboard
-├── setup.php            # Auto setup script (run once)
-├── init_db.php          # Database/tables creator
-├── /uploads/            # Uploaded user files
-├── styles.css           # Global styles
-├── README.md            # This file!
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ✅ Your loan application system is now ready to use!
