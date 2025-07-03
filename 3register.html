@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Lend</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="top-container">
+        <div class="logo"><h3>Money Lend</h3></div>
+    </div>
+    <div class="down-container">
+        <div class="inner-container">
+            <div class="top">
+                <h3 class="heading">Complete your application to get approved.</h3>
+            </div>
+            <div class="bottom">
+                <!-- Form is properly placed here -->
+                <form action="4register.php" method="post" enctype="multipart/form-data">
+                    <div class="left">
+                        <div>
+                            <label for="first_name">First Name:</label>
+                            <input type="text" id="firstname" name="first_name" required>
+                        </div>
+
+                        <div>
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" id="lastname" name="last_name" required>
+                        </div>
+
+                        <div>
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id=" dob"  name="dob" required>
+                        </div>
+
+                        <div>
+                            <label for="email">Email Address:</label>
+                            <input type="email"  name="email" id=" email" required>
+                        </div>
+
+                        <div>                  
+                            <label for="phone">Phone Number (+91):</label>
+                            <input type="tel"  name="phone" pattern="[0-9]{10}" id=" phone" placeholder="+91" required>
+                        </div>
+
+                        <div>
+                            <label for="address">Address:</label>
+                            <textarea name="address" id=" address" required></textarea>
+                        </div>
+
+                        <div>
+                            <label for="pincode">Pincode:</label>
+                            <input type="text" id=" pincode" name="pincode" required>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div>
+                            <label for="pan_number">PAN Number:</label>
+                            <input type="text" id="pannumber" name="pan_number" required>
+                        </div>
+
+                        <div>
+                            <label for="pan-front">Pan Card Front Upload:</label>
+                            <input type="file" name="pan_front" id="panfront" required                        </div>
+
+                        <div>
+                            <label for="pan-back">Pan Card Back Upload:</label>
+                            <input type="file" name="pan_back" id="panback" required>                        </div>
+
+                        <div>
+                            <label for="profile-photo">Profile Photo:</label>
+                            <input type="file" name="profile_photo" id="profilephoto" required>                         </div>
+
+                        <div>
+                            <label for="bank_statement">Bank Statement (up to 6 months):</label>
+                            <input type="file" name="bank_statement" id="bankstatement" required>                         </div>
+
+                        <div>
+                            <label for="password">Enter Password:</label>
+                            <input type="password" id=" password" name="password" required>
+                        </div>
+
+                        <div>
+                            <label for="confirm_password">Confirm Password:</label>
+                            <input type="password" id="confirmpassword" name="confirm_password" required>
+                        </div>
+                        
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

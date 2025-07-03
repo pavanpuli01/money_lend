@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('images/login-pattern.png') no-repeat left center;
+    background-size: auto; /* Keeps the original image size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+
+}
+
+
+
+
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1100px; /* Reduced container size */
+    height: 550px;
+    margin: 2cm auto;
+   
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.7); 
+}
+
+.left {
+    width: 50%;
+    background: linear-gradient(to right, hsl(212, 100%, 50%), hsl(211, 95%, 36%)); /* Blue color */
+    padding: 2cm; /* Adjusted padding to 2cm */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    border-top-left-radius: 30px; /* Rounded top-left corner */
+    border-bottom-left-radius: 30px;
+   
+}
+
+.left h1 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.left ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.left ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.check-icon {
+    width: 20px;  /* Adjust size of the icon */
+    height: 20px;
+    margin-right: 10px;  /* Space between icon and text */
+    vertical-align: middle;  /* Align icon with text */
+    background: white;
+    border-radius: 10px;
+}
+
+.right {
+    width: 50%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+     /* Centers horizontally */
+     /* Ensures text is center-aligned */
+     border-top-right-radius: 30px; /* Rounded top-left corner */
+    border-bottom-right-radius: 30px;
+    border: 2px solid #ccc;
+}
+
+
+.right h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.right label {
+    margin: 10px 0 5px;
+    font-size: 1em;
+}
+
+.right input {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.right button {
+    padding: 10px;
+    background-color: #1E90FF;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right button:hover {
+    background-color: #0056b3;
+}
+
+.right p {
+    text-align: center;
+    margin-top: 15px;
+    
+}
+
+.right a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Top Container */
+.top-container {
+    padding-left: 30px;
+    width: 100%;
+    height: 70px;
+    background-color: #2323e7;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Main container */
+.down-container {
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 70px); /* Subtract logo container height */
+}
+
+.left-section {
+    width: 20%;
+    background-color: #c1d8ff; /* Background color for the entire left section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Keep the content aligned at the top */
+    overflow: auto;
+    border: 3px solid #000000;
+}
+
+.dashboard{ 
+    border:4.5px solid #000000;
+    height:50px;
+    background-color:#c1d8ff; /* Different color for the profile section */
+    width: 100%;
+    
+    margin-bottom: 6px; 
+}
+.dashboard h1{
+    margin-top: 5px;
+    margin-left: 20px;
+    text-align: left;
+}
+.profile-section {
+    padding: 8px;
+    border: 2px solid #000000;
+    background-color: #4caf50; /* Different color for the profile section */
+    border-radius: 8px;
+    width: 96%;
+    text-align: center;
+     /* Space between profile section and personal info */
+}
+
+.profile-photo {
+    border: 4px solid #000000; /* Border color and thickness */
+    margin-top: 20px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    
+}
+
+.full-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white; /* White text for better contrast on green background */
+}
+
+.email {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: white; /* White text for better contrast on green background */
+}
+
+.personal-info {
+    border: 2px solid #000000;
+    margin-top: 8px;
+    background-color: #ffffff; /* Different background color for the personal info section */
+    padding: 20px;
+    border-radius: 8px;
+    width: 96%;
+}
+
+.personal-info p {
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.right-section {
+    background-image: url('images/Untitled.png'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 100%; /* Ensure the background image covers the full height */
+    padding: 20px;
+    box-sizing: border-box;
+    color: white; /* Set the text color to white to stand out against dark backgrounds */
+    font-family: Arial, sans-serif;
+}
+
+.loan-status {
+    border:4px solid #4caf50;
+    background-color: rgba(194, 255, 193, 0.5); /* Semi-transparent black background for better text contrast */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.loan-status h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #4caf50; /* Green color to symbolize positivity */
+}
+
+.loan-status p {
+    color: #4caf50;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.loan-status p strong {
+    color: #4caf50; /* Highlighting the last line for emphasis */
+    font-size: 1.2rem;
+}
+.logout-form{
+    margin-top: auto; /* Pushes the form to the bottom of the section */
+margin-bottom: 15px;
+}
+
+button[type="submit"] {
+    background-color: #f2ff35; /* Green */
+    color: black;
+    width:170px;
+    height:35px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff2a2a; /* Darker green on hover */
+}
+.logout-icon {
+    width: 20px; /* Set the size of the icon */
+    height: 20px;
+    margin-right: 10px; /* Space between the icon and text */
+}
+
+.logout-btn img {
+    vertical-align: middle; /* Aligns the icon vertically with the text */
+}
